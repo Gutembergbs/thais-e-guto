@@ -41,7 +41,7 @@ export default function Home() {
   function updateCounter() {
     const startDate = new Date("2015-04-26T15:00:00")
     const now = new Date()
-    const diff = now - startDate.getTime()
+    const diff = now.getTime() - startDate.getTime()
 
     const years = now.getFullYear() - startDate.getFullYear()
     const months = now.getMonth() - startDate.getMonth() + years * 12
